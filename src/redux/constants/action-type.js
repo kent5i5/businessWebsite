@@ -1,0 +1,9 @@
+export const ADD_ARTICLE = "ADD_ARTICLE";
+
+export const ADD_USER = 'ADD_USER'
+export const ADD_AUTHOR = "ADD_AUTHOR"
+export const LOGIN_REQUEST = 'LOGIN_REQUEST'
+export const LOGOUT_SUCCESS = 'LOGOUT_SUCCESS'
+export const LOGIN_FAILURE = 'LOGIN_FAILURE'
+export const ACCOUNT_CREATED = 'ACCOUNT_CREATED'
+

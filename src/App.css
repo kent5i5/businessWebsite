@@ -1,0 +1,83 @@
+.App {
+ /*  text-align: center; */
+ /* background-image: url("../src/static/img/pexels-andrea-piacquadio.jpg" );
+ background-position: 'center';
+  background-size: 'cover';
+  background-repeat: 'no-repeat' */
+}
+
+.mobile-app-logo {
+
+}
+.App-logo {
+  height: 20vmin;
+}
+
+/* .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+
+.App-link {
+  color: #09d3ac;
+}
+
+
+
+body {
+  background-color: #8aff86;
+  padding: 0px;
+  margin: 0;
+}
+h1, h2, p, ul, li {
+  font-family: sans-serif;
+}
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+ul.header {
+  background-color: #111;
+  padding: 0;
+}
+ul.header li a {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+.content {
+  background-color: rgba(0, 131, 44, 0.5);
+  padding: 2px;
+  min-height: 500px;
+}
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  margin-bottom: 10px;
+
+}
+
+.active {
+  background-color: #0099FF;
+}
+
+.review{
+  color: #09d3ac;
+  background-color: #040607;
+}
+
+.myFooter{
+  color: #09d3ac;
+  background-color: #0226f1;
+}
