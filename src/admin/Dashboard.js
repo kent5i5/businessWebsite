@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
+import { withAuthenticator, AmplifySignOut ,AmplifyChatbot} from '@aws-amplify/ui-react';
 import { Button , Tab, Row, Col, Nav} from 'react-bootstrap';
 import Login from "./Login";
 import AuthButton from "./AuthButton";
@@ -32,6 +32,7 @@ class Dashboard extends Component {
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
                     <Analysis />
+                   
                     </Tab.Pane>
                 </Tab.Content>
                 </Col>
@@ -39,6 +40,8 @@ class Dashboard extends Component {
             </Tab.Container>
 
             <Button  variant="secondary"><Link exact to="/">Home</Link></Button>
+
+       
             </div>
 
        

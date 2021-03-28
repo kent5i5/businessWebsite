@@ -4,7 +4,7 @@ class Pricing extends Component {
   render() {
     return (
       <div>
-         <MyNavBar />
+        
         <h2>HELLO</h2>
         <p>0 teams signed up in the last week alone. Get started with
 Basecode Project Planning: $8.99/month 
