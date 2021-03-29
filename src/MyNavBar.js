@@ -11,6 +11,7 @@ function MyNavBar() {
            <h1>YinKin Business Analysis</h1> 
         <ul className="header">
           <li><Link exact to="/">Home</Link></li>
+          <li><Link exact to="/blog">Blog</Link></li>
           <li><Link exact to="/dashboard">Dashboard</Link></li>
           <li><Link exact to="/pricing">Pricing</Link></li>
           <li><Link exact to="/support">Support</Link></li>

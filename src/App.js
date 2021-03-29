@@ -23,6 +23,7 @@ import Mobile from './mobile';
 import MyNavBar from "./MyNavBar";
 import Amplify, { Auth } from 'aws-amplify';
 import awsconfig from './aws-exports';
+import Blog from './admin/Blog';
 
 Amplify.configure(awsconfig);
 
@@ -65,6 +66,7 @@ function App() {
           <Route exact path="/register" component={Register} />
           <Route exact path="/mobile" component={Mobile} />
           <Route exact path="/dashboard" component={Dashboard} />
+          <Route exact path="/blog" component={Blog} />
           </div>
         </div>
         

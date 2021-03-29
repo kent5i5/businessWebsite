@@ -12,6 +12,22 @@ import { API, graphqlOperation } from 'aws-amplify';
 import * as queries from '../graphql/queries';
 import * as mutations from '../graphql/mutations';
 
+       // (async () => {
+        //     const result = await client.mutate({
+        //       mutation: gql(createBlog),
+        //       variables: {
+        //         input: {
+        //             id: "111",
+        //             title: "blog1",
+        //             createdAt: Date,
+        //             updatedAt: Date,
+        //              owner: "ken",
+        //         }
+        //       }
+        //     });
+        //     console.log(result.data.createTodo);
+        //   })();
+
    // Simple query
 //    const allTodos = await API.graphql({ query: queries.listBlogs });
 //    console.log(allTodos); // result: { "data": { "listTodos": { "items": [/* ..... */] } } }
@@ -19,7 +35,7 @@ import * as mutations from '../graphql/mutations';
    // Query using a parameter
   // const oneTodo = await API.graphql({ query: queries.getTodo, variables: { id: 'some id' }});
 
-class Dashboard extends Component {
+class Blog extends Component {
     constructor(props) {
         super(props);
         // Don't call this.setState() here!
@@ -32,8 +48,8 @@ class Dashboard extends Component {
             postContent: ''
         };
        // this.createBlog()
-       // this.fetchBlogs()
-        //this.fetchPosts()
+        this.fetchBlogs()
+        this.fetchPosts()
        // this.deleteBlogs()
       }
 
@@ -119,42 +135,33 @@ class Dashboard extends Component {
  
     render() {
         
-    
- 
         return (
             
             <div>
 
+            <div>
+            
+            <table class="center">
+            <tr>
+                <th>BLog name</th>
+                <th>Post</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>{this.state.blogname[0]}</td>
+                <td>{this.state.postTitle}</td>
+                <td>null</td>
+            </tr>
+            <tr>
+                <td>null</td>
+                <td>null</td>
+                <td>null</td>
+            </tr>
 
-              
-            <Row><Col sm={3}></Col><Col sm={3}><h1>Dashboard</h1></Col><Col sm={3}></Col></Row>
-            <Tab.Container id="left-tabs-example" defaultActiveKey="first">
-            <Row>
-                <Col sm={3}>
-                <Nav variant="pills" className="flex-column">
-                    <Nav.Item>
-                    <Nav.Link eventKey="first">Stock Price</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                    <Nav.Link eventKey="second">Company Stock info</Nav.Link>
-                    </Nav.Item>
-                </Nav>
-                </Col>
-                <Col sm={9}>
-                <Tab.Content>
-                    <Tab.Pane eventKey="first">
-                   <AuthButton />
-                   <p>{this.state.blogname[0]}  </p> 
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="second">
-                    <Analysis />
-                    <p>{this.state.blogname[1]}  </p> 
-                    </Tab.Pane>
-                </Tab.Content>
-                </Col>
-            </Row>
-            </Tab.Container>
- 
+            </table>
+                
+
+            </div>
 
             <Button  variant="secondary"><Link exact to="/">Home</Link></Button>
 
@@ -166,4 +173,4 @@ class Dashboard extends Component {
     }
 }
 
-export default withAuthenticator(Dashboard);
+export default withAuthenticator(Blog);
