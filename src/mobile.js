@@ -10,13 +10,13 @@ class Mobile extends Component {
         <h2>Android App </h2>
         <p>APP picture:</p>
 
-        <img src={homeImage} className="home-image" style={{marginLeft: "1em"}} alt="lgoin" />
+        {/* <img src={homeImage} className="home-image" style={{marginLeft: "1em"}} alt="lgoin" />
  
         <img src={loginImage} className="login-image" style={{marginLeft: "1em"}}alt="home" />
        
         <img src={searchImage} className="search-image"style={{marginLeft: "1em"}} alt="search" />
                  
-        <p>Download our mobile app</p>
+        <p>Download our mobile app</p> */}
           <img src={logo} className="mobile-app-logo" alt="logo" />
       </div>
     );

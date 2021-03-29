@@ -5,10 +5,7 @@ class Register extends Component {
   render() {
     return (
       <div>
-        <h2>GOT QUESTIONS?</h2>
-        <p>The easiest thing to do is to register to 
-        our  service <a href="">Or Login in</a>.
-        </p>
+        <p>Forum</p>
       </div>
     );
   }

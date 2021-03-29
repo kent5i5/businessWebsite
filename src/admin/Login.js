@@ -40,7 +40,9 @@ render(){
           ></AmplifySignIn>
         </AmplifyAuthenticator> */}
         {}
-        
+       
+       
+         <div class="" ><AmplifySignOut button-text="Logout"/></div>
       </div>
 
     );

@@ -38,10 +38,13 @@ function App() {
 
   React.useEffect(() => {
     const chatbotElement = document.querySelector("amplify-chatbot");
-    chatbotElement.addEventListener("chatCompleted", handleChatComplete);
-    return function cleanup() {
-      chatbotElement.removeEventListener("chatCompleted", handleChatComplete);
-    };
+    
+    if ( chatbotElement != null){
+      chatbotElement.addEventListener("chatCompleted", handleChatComplete);
+      return function cleanup() {
+        chatbotElement.removeEventListener("chatCompleted", handleChatComplete);
+      };
+    }
   }, []);
   return (
     

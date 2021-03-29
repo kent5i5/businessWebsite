@@ -32,11 +32,7 @@ class Home extends Component {
         <List />
         {/* <Counter /> */}
       </section>
-      <AmplifyChatbot
-    botName="BookTrip"
-    botTitle="My ChatBot"
-    welcomeMessage="Hello, how can I help you?"
-  />
+ 
       <blockquote class="review">
             <p>“There were a lot of holes in our communication which led to elder-care are being missing or not done on time. 
               <span class="highlight highlight--dark">Tracking down tasks is impossible</span>”</p>

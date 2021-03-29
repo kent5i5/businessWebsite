@@ -6,8 +6,8 @@ import { AuthState, onAuthUIStateChange } from '@aws-amplify/ui-components';
 function MyNavBar() {
     return (
         <div>
-        {AuthState === AuthState.SignedIn}
-         <div class="Signout" ><AmplifySignOut button-text="Logout"/></div>
+        {AuthState === AuthState.SignedIn &&
+         <div class="Signout" ><AmplifySignOut button-text="Logout"/></div>}
            <h1>YinKin Business Analysis</h1> 
         <ul className="header">
           <li><Link exact to="/">Home</Link></li>
@@ -15,9 +15,9 @@ function MyNavBar() {
           <li><Link exact to="/pricing">Pricing</Link></li>
           <li><Link exact to="/support">Support</Link></li>
           <li><Link exact to="/mobile">Mobile Apps</Link></li>
-          {AuthState === AuthState.SignedOut &&
+          
           <li><Link to="/login" class="button button--primary button--huge" data-sign-in>Sign in</Link>
-          </li>}
+          </li>
           </ul>
           
           </div>
